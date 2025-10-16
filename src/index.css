@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #FA9F42;
+}
+
+:root{--bg:#0b1020;--card:#071021;--muted:#94a3b8}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body { 
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+/* Custom Cursor - Only on desktop */
+@media (hover: hover) and (pointer: fine) {
+  .cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #FA9F42;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    box-shadow: 0 0 10px rgba(250, 159, 66, 0.8);
+  }
+
+  .cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, rgba(250, 159, 66, 0.5) 0%, rgba(250, 159, 66, 0.25) 30%, rgba(250, 159, 66, 0.1) 60%, transparent 80%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.15s ease-out;
+    filter: blur(10px);
+  }
+}
+
+/* Hide custom cursor on mobile/touch devices */
+@media (hover: none) or (pointer: coarse) {
+  .cursor-dot,
+  .cursor-glow {
+    display: none !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1020;
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC078;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a {
+  transition: all 0.3s ease;
+}
+
+
+/* small utility for accessible focus */
+:focus{outline: 3px solid rgba(250,159,66,0.25); outline-offset: 2px}
