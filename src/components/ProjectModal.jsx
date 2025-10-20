@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { TRANSLATIONS } from '../data'
 
 const backdropVariants = {
   hidden: { opacity: 0 },
@@ -32,7 +33,8 @@ const modalVariants = {
   }
 }
 
-export default function ProjectModal({project, onClose}){
+export default function ProjectModal({project, onClose, language = 'fr'}){
+const t = TRANSLATIONS[language]
 const [currentImageIndex, setCurrentImageIndex] = useState(0)
 const [showLightbox, setShowLightbox] = useState(false)
 
@@ -105,7 +107,7 @@ transition={{ delay: 0.1 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.25 }}
 >
-<h4 className="text-sm font-semibold text-slate-400 mb-3">Aperçu de l'application</h4>
+<h4 className="text-sm font-semibold text-slate-400 mb-3">{t.appPreview}</h4>
 <div className="flex gap-3 overflow-x-auto pb-2">
 {project.images.map((img, idx) => (
 <motion.button
@@ -131,7 +133,7 @@ transition={{ delay: 0.1 }}
 </motion.button>
 ))}
 </div>
-<p className="text-xs text-slate-500 mt-2">Cliquez sur une image pour l'agrandir</p>
+<p className="text-xs text-slate-500 mt-2">{t.clickToEnlarge}</p>
 </motion.div>
 )}
 
@@ -141,7 +143,7 @@ transition={{ delay: 0.1 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3 }}
 >
-<h4 className="text-sm font-semibold text-slate-400 mb-3">Technologies utilisées</h4>
+<h4 className="text-sm font-semibold text-slate-400 mb-3">{t.techUsed}</h4>
 <div className="flex flex-wrap gap-2">
 {project.stack.map((s, i)=> (
 <motion.span 
@@ -177,7 +179,7 @@ transition={{ delay: 0.1 }}
 <motion.span
   className="absolute inset-0 bg-gradient-to-r from-[#8FFFF0] to-accent opacity-0 group-hover:opacity-100 transition-opacity"
 />
-<span className="relative z-10">Fermer</span>
+<span className="relative z-10">{t.close}</span>
 </motion.button>
 </motion.div>
 </motion.div>
