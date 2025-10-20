@@ -1,17 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #FA9F42;
+  --color-accent: #64FFDA;
 }
 
-:root{--bg:#0b1020;--card:#071021;--muted:#94a3b8}
+:root{--bg:#0A192F;--card:#0d1a31;--muted:#94a3b8}
 
 * {
   scroll-behavior: smooth;
 }
 
 body { 
-  background: var(--bg);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0A192F;
   overflow-x: hidden;
 }
 
@@ -23,12 +29,12 @@ body {
     left: 0;
     width: 8px;
     height: 8px;
-    background: #FA9F42;
+    background: #64FFDA;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.1s ease;
-    box-shadow: 0 0 10px rgba(250, 159, 66, 0.8);
+    box-shadow: 0 0 10px #64FFDA;
   }
 
   .cursor-glow {
@@ -37,7 +43,7 @@ body {
     left: 0;
     width: 40px;
     height: 40px;
-    background: radial-gradient(circle, rgba(250, 159, 66, 0.5) 0%, rgba(250, 159, 66, 0.25) 30%, rgba(250, 159, 66, 0.1) 60%, transparent 80%);
+    background: radial-gradient(circle, rgba(66, 250, 250, 0.5) 0%, rgba(66, 225, 250, 0.25) 50%, rgba(66, 170, 250, 0.333) 100%, transparent 80%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9998;
@@ -60,13 +66,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0b1020;
+  background: #0A192F;
 }
 
-
+::-webkit-scrollbar-thumb {
+  background: #64FFDA;
+  border-radius: 5px;
+}
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFC078;
+  background: #8FFFD4;
 }
 
 /* Smooth transitions for all interactive elements */
@@ -74,6 +83,5 @@ button, a {
   transition: all 0.3s ease;
 }
 
-
 /* small utility for accessible focus */
-:focus{outline: 3px solid rgba(250,159,66,0.25); outline-offset: 2px}
+:focus{outline: 3px solid rgba(100, 255, 218, 0.25); outline-offset: 2px}
