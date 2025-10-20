@@ -1,16 +1,104 @@
-# React + Vite
+# Portfolio - Iliass Aarjoune
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. Features bilingual support (French/English) and showcases professional experience, projects, and skills.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Bilingual Support**: Switch between French and English
+- **Responsive Design**: Works on all device sizes  
+- **Project Gallery**: Interactive image galleries for projects
+- **Smooth Animations**: Powered by Framer Motion
+- **Modern UI**: Built with Tailwind CSS
+- **Fast Loading**: Optimized with Vite
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Visit the live portfolio: [https://ilyasarjoune.github.io/portfolio](https://ilyasarjoune.github.io/portfolio)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React 19
+- **Build Tool**: Vite  
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Deployment**: GitHub Pages
+- **CI/CD**: GitHub Actions
+
+## 📦 Installation & Development
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ilyasarjoune/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🚀 Deployment Steps
+
+### 1. Install gh-pages package
+```bash
+npm install --save-dev gh-pages
+```
+
+### 2. Automatic Deployment (Recommended)
+The project is set up with GitHub Actions for automatic deployment:
+1. Push your changes to the `main` branch
+2. GitHub Actions will automatically build and deploy to GitHub Pages
+3. Your site will be available at `https://ilyasarjoune.github.io/portfolio`
+
+### 3. GitHub Pages Settings
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" section  
+3. Set source to "GitHub Actions"
+4. The workflow will handle deployment automatically
+
+### 4. Manual Deployment (Alternative)
+```bash
+npm run deploy
+```
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/              # Static assets
+├── src/
+│   ├── assets/         # Images and media files
+│   ├── components/     # React components
+│   ├── data.jsx        # Portfolio data and translations
+│   ├── App.jsx         # Main application component
+│   └── main.jsx        # Application entry point
+├── .github/
+│   └── workflows/      # GitHub Actions workflows
+└── package.json
+```
+
+## ⚙️ Configuration
+
+### GitHub Repository Settings
+- Repository name should be: `portfolio`
+- Enable GitHub Pages in repository settings
+- Set Pages source to "GitHub Actions"
+
+### Customization
+- Edit `src/data.jsx` to update personal information
+- Add project images to `src/assets/projects images/`
+- Modify colors in `src/index.css`
+
+---
+
+Built with ❤️ by [Iliass Aarjoune](https://github.com/ilyasarjoune)
