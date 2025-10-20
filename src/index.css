@@ -69,10 +69,7 @@ body {
   background: #0A192F;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #64FFDA;
-  border-radius: 5px;
-}
+
 
 ::-webkit-scrollbar-thumb:hover {
   background: #8FFFD4;

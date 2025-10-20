@@ -41,7 +41,7 @@ return (
 Iliass <motion.span 
   className="text-accent"
   animate={{ 
-    color: ['#FA9F42', '#FFC078', '#FA9F42']
+    color: ['#64FFDA', '#8FFFF0', '#64FFDA']
   }}
   transition={{ 
     duration: 3, 
@@ -62,7 +62,7 @@ Iliass <motion.span
 <motion.a 
   href={`mailto:${CONTACT.email}`} 
   className="px-4 py-2 rounded-md border border-slate-700 text-sm transition-all"
-  whileHover={{ scale: 1.05, borderColor: '#FA9F42' }}
+  whileHover={{ scale: 1.05, borderColor: '#64FFDA' }}
   whileTap={{ scale: 0.95 }}
 >Contact</motion.a>
 <motion.a 
@@ -70,7 +70,7 @@ Iliass <motion.span
   target="_blank" 
   rel="noopener noreferrer" 
   className="px-4 py-2 rounded-md bg-accent text-black font-semibold text-sm"
-  whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(250, 159, 66, 0.5)' }}
+  whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(100, 255, 218, 0.5)' }}
   whileTap={{ scale: 0.95 }}
 >GitHub</motion.a>
 </motion.nav>
@@ -87,7 +87,7 @@ Iliass <motion.span
 <motion.div 
   className="md:col-span-2 p-6 bg-[#071021] rounded-2xl border border-slate-800 hover:border-accent/30 transition-all duration-300" 
   variants={fadeInUp}
-  whileHover={{ y: -4, boxShadow: '0 10px 30px rgba(250, 159, 66, 0.1)' }}
+  whileHover={{ y: -4, boxShadow: '0 10px 30px rgba(100, 255, 218, 0.1)' }}
 >
 <motion.h2 
   className="text-xl font-bold"
@@ -115,7 +115,7 @@ Iliass <motion.span
   initial={{ opacity: 0, scale: 0.8 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ delay: 0.8 + i * 0.1 }}
-  whileHover={{ scale: 1.1, backgroundColor: '#1e293b', color: '#FA9F42' }}
+  whileHover={{ scale: 1.1, backgroundColor: '#1e293b', color: '#64FFDA' }}
   whileTap={{ scale: 0.95 }}
 >{tech}</motion.span>
 ))}
@@ -127,7 +127,7 @@ Iliass <motion.span
   className="p-6 rounded-2xl bg-[#071021] border border-slate-800 hover:border-accent/30 transition-all duration-300" 
   aria-label="Contact card"
   variants={fadeInUp}
-  whileHover={{ y: -4, boxShadow: '0 10px 30px rgba(250, 159, 66, 0.1)' }}
+  whileHover={{ y: -4, boxShadow: '0 10px 30px rgba(100, 255, 218, 0.1)' }}
 >
 <h3 className="font-semibold">Contact</h3>
 <p className="mt-2 text-sm text-slate-400">{CONTACT.location}</p>
@@ -147,7 +147,7 @@ Iliass <motion.span
   initial={{ opacity: 0, x: -10 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ delay: 0.9 + i * 0.1 }}
-  whileHover={{ x: 5, color: '#FA9F42' }}
+  whileHover={{ x: 5, color: '#64FFDA' }}
 >{lang}</motion.li>
 ))}
 </ul>
@@ -184,8 +184,8 @@ Iliass <motion.span
   whileHover={{ 
     y: -8, 
     scale: 1.02,
-    borderColor: '#FA9F42',
-    boxShadow: '0 20px 40px rgba(250, 159, 66, 0.2)'
+    borderColor: '#64FFDA',
+    boxShadow: '0 20px 40px rgba(100, 255, 218, 0.2)'
   }}
   whileTap={{ scale: 0.98 }}
   onClick={()=>setActive(p)} 
@@ -238,7 +238,7 @@ Iliass <motion.span
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
-  whileHover={{ y: -4, boxShadow: '0 10px 30px rgba(250, 159, 66, 0.1)' }}
+  whileHover={{ y: -4, boxShadow: '0 10px 30px rgba(100, 255, 218, 0.1)' }}
 >
 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 <motion.div
@@ -263,7 +263,7 @@ Iliass <motion.span
   className="inline-block mt-3 px-4 py-2 rounded bg-accent text-black font-semibold"
   whileHover={{ 
     scale: 1.05, 
-    boxShadow: '0 0 25px rgba(250, 159, 66, 0.6)',
+    boxShadow: '0 0 25px rgba(100, 255, 218, 0.6)',
     y: -2
   }}
   whileTap={{ scale: 0.95 }}

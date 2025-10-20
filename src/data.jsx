@@ -12,7 +12,14 @@ export const PROJECTS = [
 id: 'hard-auto',
 title: 'Hard Auto — App & Dashboard',
 desc: 'Application mobile (fidélisation, réservation) + dashboard admin. Impact: +30% rétention clients.',
-stack: ['React Native','Redux','Laravel','MySQL','CI/CD']
+stack: ['React Native','Redux','Laravel','MySQL','CI/CD'],
+images: [
+new URL('./assets/projects images/Hard Auto App/IMG_3702.PNG', import.meta.url).href,
+new URL('./assets/projects images/Hard Auto App/IMG_3703.PNG', import.meta.url).href,
+new URL('./assets/projects images/Hard Auto App/IMG_3704.PNG', import.meta.url).href,
+new URL('./assets/projects images/Hard Auto App/IMG_3705.PNG', import.meta.url).href,
+new URL('./assets/projects images/Hard Auto App/IMG_3706.PNG', import.meta.url).href
+]
 },
 {
 id: 'hr-system',
