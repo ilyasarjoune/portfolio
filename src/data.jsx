@@ -4,7 +4,7 @@ phone: '+212-605739692',
 location: 'Casablanca, Morocco',
 github: 'https://github.com/ilyasarjoune/',
 linkedin: 'https://www.linkedin.com/in/iliassaarjoune/',
-resume: '/Iliass_Aarjoune_CV.pdf'
+resume: '/portfolio/Iliass_Aarjoune_CV.pdf'
 }
 
 export const TRANSLATIONS = {
