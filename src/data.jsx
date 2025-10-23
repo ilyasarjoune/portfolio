@@ -3,7 +3,8 @@ email: 'iliassaarjoune@gmail.com',
 phone: '+212-605739692',
 location: 'Casablanca, Morocco',
 github: 'https://github.com/ilyasarjoune/',
-linkedin: 'https://www.linkedin.com/in/iliassaarjoune/'
+linkedin: 'https://www.linkedin.com/in/iliassaarjoune/',
+resume: '/Iliass_Aarjoune_CV.pdf'
 }
 
 export const TRANSLATIONS = {
@@ -14,6 +15,7 @@ fr: {
   greeting: 'Bonjour — je suis Iliass',
   contact: 'Contact',
   github: 'GitHub',
+  downloadResume: 'Télécharger CV',
   languages: 'Langues',
   projects: 'Projets',
   viewDetails: '→ Voir les détails',
@@ -51,6 +53,7 @@ en: {
   greeting: 'Hello — I\'m Iliass',
   contact: 'Contact',
   github: 'GitHub',
+  downloadResume: 'Download Resume',
   languages: 'Languages',
   projects: 'Projects',
   viewDetails: '→ View Details',

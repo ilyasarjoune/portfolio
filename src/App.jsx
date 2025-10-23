@@ -79,6 +79,15 @@ Iliass <motion.span
 {language === 'fr' ? '🇺🇸 EN' : '🇫🇷 FR'}
 </motion.button>
 <motion.a 
+  href={CONTACT.resume} 
+  download="Iliass_Aarjoune_CV.pdf"
+  className="px-4 py-2 rounded-md border border-slate-700 text-sm transition-all hover:border-accent"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  📄 {t.downloadResume}
+</motion.a>
+<motion.a 
   href={`mailto:${CONTACT.email}`} 
   className="px-4 py-2 rounded-md border border-slate-700 text-sm transition-all"
   whileHover={{ scale: 1.05, borderColor: '#64FFDA' }}
